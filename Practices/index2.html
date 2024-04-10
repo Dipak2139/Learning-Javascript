@@ -1,0 +1,40 @@
+// Taking out factorial of a number
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let num = 4;
+
+        // let fact = (a)=>{
+        //     let ans = 1;
+        //     for(let i=1; i<=a;i++){
+        //         ans=ans*i
+        //     }
+        //     return ans;
+        // }
+
+        // let factorial = fact(num)
+        // console.log(factorial);
+
+        // using reduce function
+
+        let a=6;
+        function factorial(number){
+            let arr = Array.from(Array(number+1).keys())
+            console.log(arr.slice(1,))
+            let c = arr.slice(1,).reduce((a,b)=>{
+                return a**b;
+            })
+            return c;
+        }
+
+        factorial(a);
+    </script>
+</body>
+</html>
