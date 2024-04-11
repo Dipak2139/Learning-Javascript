@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dyanamic Website</title>
+    <style>
+        .card {
+            display: flex;
+            width: 75vw;
+            height: 110px;
+            border: 2px solid black;
+            /* justify-content: center; */
+            align-items: center;
+            background: black;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .image img {
+            border-radius: 14px;
+            margin: 10px;
+        }
+
+        .card-details h2 {
+            font-family: Robot, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 2px 0;
+            color: white;
+        }
+
+        .card-details p {
+            padding: 2px 0;
+            font-family: 'Times New Roman', Times, serif;
+            size: 16px;
+            font-weight: 400;
+            color: white;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .image .capsule {
+            position: absolute;
+            bottom: 17px;
+            right: 21px;
+            background: #030303a8;
+            color: white;
+            z-index: 10;
+            border-radius: 4px;
+            padding: 5px;
+            font-size: 14px;
+
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="/images/images/pic.webp" alt="">
+                <div class="capsule">31:06</div>
+            </div>
+
+            <div class="card-details">
+                <h2>Installing VS Code & How Website Work | Sigma Web Development - Tutorial 1</h2>
+                <p class="span">CodeWithDipak <span>.</span> 700M views <span>.</span>2 Months Ago</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
